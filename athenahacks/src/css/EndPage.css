@@ -1,0 +1,64 @@
+  /* EndPage.css */
+  .end-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .end-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .end-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .submit-button {
+    background-color: #79428F;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 2rem 0;
+  }
+  
+  .submit-button:hover {
+    background-color: #79428F;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(73, 107, 255, 0.3);
+  }
+  
+  .submit-button:disabled {
+    background-color: #c1c1c1;
+    cursor: wait;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    background-color: #fdecea;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .disclaimer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #888;
+    max-width: 500px;
+  }

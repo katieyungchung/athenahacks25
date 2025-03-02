@@ -1,0 +1,85 @@
+/* QuestionPage.css */
+.question-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #79428F;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .question-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .options-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .option {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .option:hover {
+    background-color: #e9ecef;
+  }
+  
+  .option.selected {
+    background-color: #e6eeff;
+    border-color: #b481f1;
+  }
+  
+  .next-button {
+    background-color: #79428F;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+    margin-top: auto;
+  }
+  
+  .next-button:hover {
+    background-color: #79428F;
+  }
+  
+  .next-button:disabled {
+    background-color: #c1c1c1;
+    cursor: not-allowed;
+  }

@@ -1,0 +1,130 @@
+
+  /* ResultsPage.css */
+  .results-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  
+  .results-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .results-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+  }
+  
+  .results-section h2 {
+    font-size: 1.5rem;
+    color: #79428F;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e6eeff;
+  }
+  
+  .passions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .passion-item {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #d89bf0;
+  }
+  
+  .passion-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .passion-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .recommendations-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recommendations-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .recommendations-list li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #79428F;
+  }
+  
+  .recommendations-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .primary-button, .secondary-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .primary-button {
+    background-color: #79428F;
+    color: white;
+    border: none;
+  }
+  
+  .primary-button:hover {
+    background-color: #79428F;
+  }
+  
+  .secondary-button {
+    background-color: white;
+    color: #79428F;
+    border: 1px solid #79428F;
+  }
+  
+  .secondary-button:hover {
+    background-color: #f0f4ff;
+  }
+  
+  .disclaimer {
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+  }
+  
+  @media print {
+    .actions {
+      display: none;
+    }
+    
+    .results-container {
+      box-shadow: none;
+    }
+  }
